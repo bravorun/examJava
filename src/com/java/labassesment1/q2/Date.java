@@ -28,7 +28,7 @@ public class Date {
 	
 	@Override
 	public String toString() {
-		return "Date:" + day + "/" + month + "/" + year;
+		return "Date Of Birth:" + day + "/" + month + "/" + year;
 	}
 	public int getDay() {
 		return day;

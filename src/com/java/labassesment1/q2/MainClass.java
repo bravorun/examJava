@@ -22,6 +22,8 @@ public class MainClass {
 				System.out.println("Enter intrest rate");
 				rate=sc.nextFloat();
 				acc=new SavingsAccount(balance,accno,rate);
+				System.out.println(acc.getBalance());
+				System.out.println(acc.getOwner());
 				break;
 			case 2:
 				System.out.println("Enter Account number");
@@ -31,6 +33,9 @@ public class MainClass {
 				System.out.println("Enter Charges");
 				rate=sc.nextFloat();
 				acc=new CurrentAccount(balance,accno,rate);
+				System.out.println(acc.getBalance());
+				System.out.println(acc.getOwner());
+			
 				break;
 			}
 		}

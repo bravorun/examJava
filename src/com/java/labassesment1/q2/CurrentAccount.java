@@ -6,13 +6,7 @@ public CurrentAccount(float balance, String number, float minimumBalance) {
 	this.minimumBalance = minimumBalance;
 }
 
-
 public float getCharges() {
 return minimumBalance;
 }
-
-
-
-
-
 }

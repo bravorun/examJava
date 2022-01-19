@@ -1,23 +1,27 @@
 package com.java.labassesment1.q2;
+
+import java.util.Scanner;
+
 public class Account {
 protected float balance;
 private String number;
 private Owner owner;
-public Account(float balance, String number) {
-super();
-this.balance = balance;
-this.number = number;
-//this.owner = owner;
-}
 
-public Account(float balance, String number, Owner owner) {
-	super();
+
+public Account(float balance, String number) {
+	Scanner sc=new Scanner(System.in);
 	this.balance = balance;
 	this.number = number;
-	this.owner = owner;
+	System.out.println("Enter Owner Information");
+	System.out.println("Enter Name");
+	String name=sc.next();
+	System.out.println("Enter nic");
+	String id=sc.next();
+	System.out.println("Enter Date of birth");
+	Date d =new Date();
+	this.owner = new Owner(name,id,d);
 	
 }
-
 public String getNumber() {
 return number;
 }

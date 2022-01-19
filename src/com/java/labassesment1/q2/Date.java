@@ -1,11 +1,19 @@
 package com.java.labassesment1.q2;
 
+import java.util.Scanner;
+
 public class Date {
 	private int day;
 	private int month;
 	private int year;
 	public Date() {
-		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Day");
+		this.day=sc.nextInt();
+		System.out.println("Enter Month");
+		this.month=sc.nextInt();
+		System.out.println("Enter Year");
+		this.year=sc.nextInt();
 	}
 	public Date(int day, int month, int year) {
 		this.day = day;
